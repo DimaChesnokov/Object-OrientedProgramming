@@ -1,0 +1,53 @@
+using System;
+
+// Базовый класс Фигура
+public class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Рисую общую фигуру");
+    }
+}
+
+// Производный класс Круг
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Рисую круг");
+    }
+}
+
+// Производный класс Прямоугольник
+public class Rectangle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Рисую прямоугольник");
+    }
+}
+
+// Производный класс Треугольник
+public class Triangle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Рисую треугольник");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Shape[] shapes = new Shape[3];
+        shapes[0] = new Circle();
+        shapes[1] = new Rectangle();
+        shapes[2] = new Triangle();
+
+        foreach (Shape shape in shapes)
+        {
+            shape.Draw();
+        }
+    }
+}

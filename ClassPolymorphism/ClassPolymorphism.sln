@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassPolymorphism", "ClassPolymorphism\ClassPolymorphism.csproj", "{52EF987A-41B3-414D-8204-AD41525EBAA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F96FC51F-B7F7-4BCB-BF6E-626F627C4A42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52EF987A-41B3-414D-8204-AD41525EBAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EF987A-41B3-414D-8204-AD41525EBAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EF987A-41B3-414D-8204-AD41525EBAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EF987A-41B3-414D-8204-AD41525EBAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96FC51F-B7F7-4BCB-BF6E-626F627C4A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96FC51F-B7F7-4BCB-BF6E-626F627C4A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96FC51F-B7F7-4BCB-BF6E-626F627C4A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96FC51F-B7F7-4BCB-BF6E-626F627C4A42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0878D14-25A9-44F4-888B-94CF6EED1F20}
+	EndGlobalSection
+EndGlobal
