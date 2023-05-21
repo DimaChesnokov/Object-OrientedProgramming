@@ -9,23 +9,36 @@ namespace ClassInheritancee
 {
     public  class Vehicle
     {
-        public string Brand { get; set; }
-        public string Model { get; set; }
-        public int Year { get; set; }
+        public string Brand { get; set; } // Свойство для хранения марки автомобиля
+        public string Model { get; set; } // Свойство для хранения модели автомобиля
+        public int Year { get; set; } // Свойство для хранения года выпуска автомобиля
 
+
+        /// <summary>
+        /// Метод для запуска двигателя автомобиля
+        /// </summary>
         public void StartEngine()
         {
-            Console.WriteLine("Двигатель запущен");
+            Console.WriteLine("Двигатель запущен"); // Вывод сообщения о запуске двигателя
         }
 
+        /// <summary>
+        ///  Метод для остановки двигателя автомобиля
+        /// </summary>
         public void StopEngine()
         {
             Console.WriteLine("Двигатель остановлен");
         }
     }
 
-   public class Car : Vehicle
+    /// <summary>
+    /// // Класс Car наследуется от класса Vehicle
+    /// </summary>
+    public class Car : Vehicle
     {
+        /// <summary>
+        /// // Метод для движения автомобиля
+        /// </summary>
         public void Drive()
         {
             Console.WriteLine("Автомобиль движется");
