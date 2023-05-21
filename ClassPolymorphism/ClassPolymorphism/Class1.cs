@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassPolymorphism
 {
+    //Полиморфизм с помощью виртуальных методов (Базовый класс)
     // Базовый класс Фигура
     public class Shape
     {
@@ -69,6 +70,20 @@ namespace ClassPolymorphism
         }
     }
 
+
+    //Полиморфизм с перегрузкой
+    public class Z
+    {
+        public static void D(int k)
+        {
+            Console.WriteLine("Integer");
+        }
+
+        public static void D(double u)
+        {
+            Console.WriteLine("Double");
+        }
+    }
 
 
 

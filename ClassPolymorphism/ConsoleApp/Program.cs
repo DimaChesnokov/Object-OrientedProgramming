@@ -11,6 +11,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             example1();
+            example3();
         }
 
         static void example1()
@@ -35,6 +36,12 @@ namespace ConsoleApp
 
             animal1.MakeSound(); // Вывод: Гав-гав!
             animal2.MakeSound(); // Вывод: Мяу-мяу!
+        }
+
+        static void example3()
+        {
+            Z.D(3.5);
+            Z.D(1);
         }
     }
 }
