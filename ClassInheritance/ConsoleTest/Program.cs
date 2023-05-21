@@ -12,19 +12,19 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            Vehicle vehicle = new Vehicle();
-            vehicle.Brand = "Toyota";
-            vehicle.Model = "Corolla";
-            vehicle.Year = 2019;
-            vehicle.StartEngine();  // Выводит: Двигатель запущен
+            Vehicle vehicle = new Vehicle(); // Создание экземпляра класса Vehicle
+            vehicle.Brand = "Toyota"; // Установка значения свойства Brand
+            vehicle.Model = "Corolla"; // Установка значения свойства Model
+            vehicle.Year = 2019; // Установка значения свойства Year
+            vehicle.StartEngine(); // Вызов метода StartEngine() для экземпляра vehicle, выводит: Двигатель запущен
 
-            Car car = new Car();
-            car.Brand = "BMW";
-            car.Model = "X5";
-            car.Year = 2022;
-            car.StartEngine();      // Унаследованный метод, выводит: Двигатель запущен
-            car.Drive();            // Собственный метод класса, выводит: Автомобиль движется
-            car.StopEngine();       // Унаследованный метод, выводит: Двигатель остановлен
+            Car car = new Car(); // Создание экземпляра класса Car
+            car.Brand = "BMW"; // Установка значения свойства Brand
+            car.Model = "X5"; // Установка значения свойства Model
+            car.Year = 2022; // Установка значения свойства Year
+            car.StartEngine(); // Вызов унаследованного метода StartEngine() для экземпляра car, выводит: Двигатель запущен
+            car.Drive(); // Вызов собственного метода Drive() для экземпляра car, выводит: Автомобиль движется
+            car.StopEngine(); // Вызов унаследованного метода StopEngine() для экземпляра car, выводит: Двигатель остановлен
         }
     }
 }

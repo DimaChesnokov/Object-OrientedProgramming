@@ -34,7 +34,7 @@ namespace ClassInheritancee
     /// <summary>
     /// // Класс Car наследуется от класса Vehicle
     /// </summary>
-    public class Car : Vehicle
+    public class Car : Vehicle 
     {
         /// <summary>
         /// // Метод для движения автомобиля

@@ -26,39 +26,39 @@ namespace ClassInterfacesAndEvents
     /// </summary>
     public interface IShape
     {
-        double CalculateArea();
-        double CalculatePerimeter();
+        double CalculateArea(); // Метод для вычисления площади фигуры
+        double CalculatePerimeter(); // Метод для вычисления периметра фигуры
     }
 
     //Классы реализующие эти методы с наследованием
     public class Circle : IShape
     {
-        public double Radius { get; set; }
+        public double Radius { get; set; } // Свойство для хранения радиуса окружности
 
         public double CalculateArea()
         {
-            return Math.PI * Radius * Radius;
+            return Math.PI * Radius * Radius; // Вычисление площади окружности по формуле
         }
 
         public double CalculatePerimeter()
-        {
-            return 2 * Math.PI * Radius;
+        { 
+            return 2 * Math.PI * Radius; // Вычисление периметра окружности по формуле
         }
     }
 
     public class Rectangle : IShape
     {
-        public double Width { get; set; }
-        public double Height { get; set; }
+        public double Width { get; set; } // Свойство для хранения ширины прямоугольника
+        public double Height { get; set; } // Свойство для хранения высоты прямоугольника
 
         public double CalculateArea()
         {
-            return Width * Height;
+            return Width * Height; // Вычисление площади прямоугольника по формуле
         }
 
         public double CalculatePerimeter()
         {
-            return 2 * (Width + Height);
+            return 2 * (Width + Height); // Вычисление периметра прямоугольника по формуле
         }
     }
 
