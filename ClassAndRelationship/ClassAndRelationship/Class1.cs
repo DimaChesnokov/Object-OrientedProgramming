@@ -12,17 +12,23 @@ namespace ClassAndRelationship
     public class Person
     {
         // Поля класса
-        public string Name;
-        public int Age;
+        public string Name;  // Публичное поле для хранения имени
+        public int Age; // Публичное поле для хранения возраста
 
-        // Конструктор класса
+        /// <summary>
+        /// // Конструктор, принимающий имя и возраст
+        /// </summary>
+        /// <param name="name">Имя</param>
+        /// <param name="age">Возраст</param>
         public Person(string name, int age)
         {
-            Name = name;
-            Age = age;
+            Name = name; // Инициализация поля имени значением, переданным в конструкторе
+            Age = age; // Инициализация поля возраста значением, переданным в конструкторе
         }
 
-        // Метод класса
+        /// <summary>
+        /// // Метод для вывода приветствия с именем
+        /// </summary>
         public void SayHello()
         {
             Console.WriteLine($"Привет, меня зовут {Name}!");
@@ -36,9 +42,9 @@ namespace ClassAndRelationship
     public abstract class Shape
     {
         // Абстрактный метод
-        public abstract double CalculateArea();
+        public abstract double CalculateArea();  // Абстрактный метод, который должен быть реализован в производных классах
 
-        // Обычный метод
+        // Обычный метод,  выводящий сообщение о том, что это фигура
         public void DisplayShape()
         {
             Console.WriteLine("Это фигура.");
@@ -47,16 +53,20 @@ namespace ClassAndRelationship
 
     public class Circle : Shape
     {
-        public double Radius { get; set; }
+        public double Radius { get; set; }  // Свойство для хранения радиуса круга
 
+        /// <summary>
+        /// // Конструктор, принимающий радиус круга
+        /// </summary>
+        /// <param name="radius">Радиус</param>
         public Circle(double radius)
         {
-            Radius = radius;
+            Radius = radius;  // Инициализация свойства радиуса значением, переданным в конструкторе
         }
 
-        public override double CalculateArea()
+        public override double CalculateArea() // Переопределение абстрактного метода CalculateArea() из базового класса
         {
-            return Math.PI * Radius * Radius;
+            return Math.PI * Radius * Radius; // Вычисление площади круга (π * r^2)
         }
     }
 
@@ -65,11 +75,23 @@ namespace ClassAndRelationship
     /// </summary>
     public static class MathUtils
     {
+        /// <summary>
+        /// статический метод Add, который принимает два целочисленных параметра a и b и возвращает их сумму.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static int Add(int a, int b)
         {
             return a + b;
         }
 
+        /// <summary>
+        ///  Это статический метод Multiply, который принимает два числа с плавающей запятой a и b и возвращает их произведение.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double Multiply(double a, double b)
         {
             return a * b;
@@ -95,30 +117,44 @@ namespace ClassAndRelationship
     /// </summary>
     public class ShoppingCart
     {
-        private List<Product> products;
+        private List<Product> products; // Приватное поле для хранения списка товаров
 
+
+        /// <summary>
+        ///  Конструктор класса ShoppingCart
+        /// </summary>
         public ShoppingCart()
         {
-            products = new List<Product>();
+            products = new List<Product>(); // Создание нового списка товаров
         }
 
-        public void AddProduct(Product product)
+        /// <summary>
+        /// Метод для добавления товара в корзину
+        /// </summary>
+        /// <param name="product">Продукт</param>
+        public void AddProduct(Product product) 
         {
-            products.Add(product);
+            products.Add(product); // Добавление товара в список
         }
 
+        /// <summary>
+        /// Метод для отображения списка товаров
+        /// </summary>
         public void DisplayProducts()
         {
-            foreach (Product product in products)
+            foreach (Product product in products) // Перебор всех товаров в списке
             {
-                Console.WriteLine(product.Name);
+                Console.WriteLine(product.Name); // Вывод наименования товара
             }
         }
 
+        /// <summary>
+        /// Вложенный класс Product
+        /// </summary>
         public class Product
         {
-            public string Name { get; set; }
-            public decimal Price { get; set; }
+            public string Name { get; set; } // Свойство для хранения наименования товара
+            public decimal Price { get; set; } // Свойство для хранения цены товара
         }
     }
 
